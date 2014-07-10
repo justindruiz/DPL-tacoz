@@ -6,9 +6,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
   <div class="container">
     <header id="site-header">
-      <%= link_to(image_tag('http://placehold.it/100x100'), root_path) %>
+      <div class="logo"
+        <%= link_to(image_tag('logo.jpg'), root_path) %>
+      </div>
       <%= render('shared/topnav') %>
     </header>
     <section id="site-content">
