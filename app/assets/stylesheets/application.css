@@ -19,3 +19,7 @@
 body {
   background-color: orange;
 }
+#map, #full-map {
+  width: 100%;
+  height: 400px;
+}
