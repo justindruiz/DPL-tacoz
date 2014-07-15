@@ -1,0 +1,9 @@
+<h1><%= @location.street_address %></h1>
+<h1><%= @location.street_address2 %></h1>
+<h2><%= @location.city %></h2>
+<h2><%= @location.state %></h2>
+<h3><%= @location.zip %></h3>
+
+<%= link_to('Map', location_path(@location.id), class: 'btn btn-success') %>
+<%= link_to 'Destroy Location Item', [:admin, @location], method: :delete %>
+<%= link_to 'Edit Location Item', edit_admin_location_path %>
