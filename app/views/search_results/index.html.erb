@@ -1,0 +1,14 @@
+<h1>Search Results for <%= params[:q] %></h1>
+<p>Found <%= pluralize(@search_locations.length, 'locations') %></p>
+<% @search_locations.each do |result| %>
+  <div class="locations">
+    <%= link_to(result.address, result)%>
+  </div>
+<% end %>
+<p>Found <%= pluralize(@menu_item_results.length, 'menu items') %></p>
+<% @menu_item_results.each do |result| %>
+  <div class="menu items">
+    <%= link_to(result.name, result)%>
+    <p><%= result.description %></p>
+  </div>
+<% end %>
